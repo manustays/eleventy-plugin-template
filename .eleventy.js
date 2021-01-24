@@ -1,20 +1,20 @@
 // Example use for the demo plugin:
 // {{ 'Steph' | hello | safe }}
 
-module.exports = (eleventyConfig, options) => {
-  // Define defaults for your plugin config
-  const defaults = {
-    htmlTag: "h2",
-  };
+// Define defaults for your plugin config
+const defaults = {
+  htmlTag: "h2",
+};
 
+module.exports = (eleventyConfig, options) => {
+  // Combine defaults with user defined options
+  const { htmlTag } = {
+    ...defaults,
+    ...options,
+  };
+  
   // You can create more than filters as a plugin, but here's an example
   eleventyConfig.addFilter("hello", (name) => {
-    // Combine defaults with user defined options
-    const { htmlTag } = {
-      ...defaults,
-      ...options,
-    };
-
     return `<${htmlTag}>Hello, ${name}!</${htmlTag}>`;
   });
 };
