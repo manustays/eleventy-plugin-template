@@ -4,6 +4,8 @@
 
 Fork this repo, or select "Use this template" to get started.
 
+> Note: this repo itself is a fork of [5t3ph/eleventy-plugin-template](https://github.com/5t3ph/eleventy-plugin-template) with minor tweaks (in `.eleventy.js`) and defaults of my own.
+
 ### Using this template
 
 This template is setup to run a single page 11ty site for testing your plugin functionality. The build files are excluded from the final plugin package via `.npmignore`.
