@@ -1,4 +1,4 @@
-## Eleventy Plugin Template
+# Eleventy Plugin Template
 
 > A starter environment for creating plugins for Eleventy (11ty).
 
@@ -38,26 +38,38 @@ Note that making changes in the plugin source will likely require restarting the
 
 - Bryan Robinson's ["Create a Plugin with 11ty"](https://www.youtube.com/watch?v=aO-NFFKjnnE) demonstration on "Learn With Jason"
 
+### Publish the plugin on npm:
+
+1. Create an [account on npm](https://www.npmjs.com/)
+2. On your terminal, run `npm login` and login with your credentials created in step-1.
+3. Run `npm publish` to publish your package to npm.
+
 ---
 
 **The following is a boilerplate for your final plugin README**.
 
 ## Usage
 
-Describe how to install your plugin, such as:
+### STEP 1 – Install the plugin:
 
 ```bash
-npm install --save-dev @scope/plugin-name
+npm install --save-dev @username/eleventy-plugin-name
 ```
 
-Then, include it in your `.eleventy.js` config file:
+### STEP 2 – Include it in your `.eleventy.js` config file:
 
 ```js
-const pluginName = require("@scope/plugin-name");
+const pluginName = require("@username/eleventy-plugin-name");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(pluginName);
 };
+```
+
+### STEP 3 – Use it in your templates:
+
+```njk
+{% ShortCodeName "value" %}
 ```
 
 ## Config Options
@@ -72,4 +84,4 @@ Show examples of likely configurations.
 
 ## Credits
 
-Add credits if needed.
+Add credits if needed. Huge shoutout to the [awesome 11ty community](https://twitter.com/eleven_ty)!
