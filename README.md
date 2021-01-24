@@ -45,7 +45,7 @@ Note that making changes in the plugin source will likely require restarting the
 Describe how to install your plugin, such as:
 
 ```bash
-npm install @scope/plugin-name
+npm install --save-dev @scope/plugin-name
 ```
 
 Then, include it in your `.eleventy.js` config file:
@@ -60,9 +60,9 @@ module.exports = (eleventyConfig) => {
 
 ## Config Options
 
-| Option      | Type | Default       |
-| ----------- | ---- | ------------- |
-| option name | type | default value |
+| Option      | Type    | Default       | Description              |
+| ----------- | ------- | ------------- |--------------------------|
+| option name | type    | default value | What does this option do |
 
 ## Config Examples
 
