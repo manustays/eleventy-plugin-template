@@ -84,4 +84,4 @@ Show examples of likely configurations.
 
 ## Credits
 
-Add credits if needed. Huge shoutout to the [awesome 11ty community](https://twitter.com/eleven_ty)!
+Add credits if needed. Huge shout-out to the [awesome 11ty community](https://twitter.com/eleven_ty)!
